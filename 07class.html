@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<script>
+    class Client{
+        constructor(nome, idade){
+            this.nome = nome;
+            this.idade = idade;
+        }
+
+        verificarIdade(){
+           var condicao = "Menor idade";
+            if (this.idade >= 18) {
+                condicao ="Maior idade";
+            }
+        return condicao;
+        }
+
+    }
+
+    const obj1 = new Client("Ral",29);
+    console.log(obj1.verificarIdade());
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

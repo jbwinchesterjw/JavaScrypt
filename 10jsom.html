@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsom</title>
+
+    <script>
+        class Curso{
+            constructor(nome, categoria, valor){
+                this.nome = nome;
+                this.categoria = categoria;
+                this.valor = valor;
+            }
+        }
+
+        const curso1 = new Curso("Angular", "front-End", 1800);
+        const curso2 = new Curso("java", "Beck-End", 2800);
+        const curso3 = new Curso("C#", "front-End", 3800);
+        const curso4 = new Curso("React", "front-End", 4800);
+        const curso5 = new Curso("TypeScrypt", "front-End", 800);
+
+        var cursos = [];
+
+        cursos.push(curso1);
+        cursos.push(curso2);
+        cursos.push(curso3);
+        cursos.push(curso4);
+        cursos.push(curso5);
+
+        console.table(cursos);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
